@@ -32,7 +32,7 @@
 
     .password-container {
         position: relative;
-        display: inline-block;
+        width: 100%;
     }
 
     #password {
@@ -62,7 +62,7 @@
 
     input {
         font-size: 12px;
-        width: 90%;
+        width: 100%;
         padding: 10px;
         margin: 5px 0;
         background: #111;
@@ -187,6 +187,7 @@
         display: none; /* По умолчанию скрыто */
     }
 
+    
 
     /* Адаптивность для мобильных устройств */
     @media (max-width: 600px) {
