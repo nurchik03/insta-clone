@@ -1,0 +1,208 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .login-container {
+        margin-top: 8%;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .login-box {
+        background: #000000;
+        padding: 40px;
+        border-radius: 0px;
+        border: 0.2px solid #646464b7;
+    }
+
+    .password-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    #password {
+        width: 100%;
+        padding-right: 148px; /* Отступ, чтобы кнопка не перекрывала текст */
+    }
+
+    .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        color: #c9c9c9;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+
+
+    h1 {
+        font-family: 'Billabong', cursive;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        font-size: 12px;
+        width: 90%;
+        padding: 10px;
+        margin: 5px 0;
+        background: #111;
+        border: none;
+        color: #fff;
+        border-radius: 0px;
+        border: 0.2px solid #636363b7;
+    }
+
+    .login-btn {
+        width: 90%;
+        padding: 10px;
+        background: #006db6;
+        color: white;
+        border: none;
+        border-radius: 9px;
+        cursor: pointer;
+        margin: 10px 0;
+    }
+
+    .separator {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ccc;
+        margin: 10px 0;
+    }
+
+    .separator span {
+        flex: 1;
+        border-top: 1px solid #333;
+        margin: 0 10px;
+    }
+
+
+    .fb-logo {
+        width: 20px; /* Размер логотипа */
+        height: 20px;
+    }
+
+
+    .voit {
+        background-color: #b70000;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        background: none;
+        border: none;
+        color: #0095f6;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+
+
+    .forgot {
+        color: #ccc;
+        font-size: 14px;
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+
+    .register-box {
+        background: #000000;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 0px;
+        border: 0.2px solid #646464b7;
+        font-size: 13px;
+    }
+
+    .register-box a {
+        color: #0095f6;
+        text-decoration: none;
+    }
+
+    .app-links p {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    .google {
+        width: 130px;
+        margin: 10px;
+    }
+    .app {
+        width: 100px;
+        margin: 30px;
+    }
+    .buttons a{
+        color: #000;
+    }
+
+    footer {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #b9b9b9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Центрирует текст */
+        width: 100%; /* Чтобы занять всю доступную ширину */
+    }
+
+
+    .logo {
+        width: 100%; /* Логотип будет адаптироваться к размеру экрана */
+        max-width: 200px; /* Максимальный размер */
+        height: auto;
+        display: block;
+        margin: 5% auto 10%; /* Центрируем логотип */
+    }
+
+    .error-message {
+        color: rgb(202, 69, 69);
+        font-size: 13px;
+        margin-top: 5px;
+        text-align: center;
+        display: none; /* По умолчанию скрыто */
+    }
+
+
+    /* Адаптивность для мобильных устройств */
+    @media (max-width: 600px) {
+
+
+
+        .login-container {
+            padding: 15px;
+        }
+
+        .login-box {
+            padding: 20px;
+        }
+
+
+        .logo {
+            max-width: 150px;
+        }
+    }
